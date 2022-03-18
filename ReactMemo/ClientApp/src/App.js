@@ -8,6 +8,8 @@ import AuthorizeRoute from './components/api-authorization/AuthorizeRoute';
 import ApiAuthorizationRoutes from './components/api-authorization/ApiAuthorizationRoutes';
 import { ApplicationPaths } from './components/api-authorization/ApiAuthorizationConstants';
 import { About } from './components/About';
+import { Contact } from './components/Contact';
+
 
  
 import './custom.css'
@@ -22,7 +24,8 @@ export default class App extends Component {
         <Route path='/counter' component={Counter} />
         <AuthorizeRoute path='/fetch-data' component={FetchData} />
             <Route path={ApplicationPaths.ApiAuthorizationPrefix} component={ApiAuthorizationRoutes} />
-            <Route path='/About' component={About}/>
+            <Route path='/about' component={About}/>
+            <Route path='/contact' component={Contact}/>
       </Layout>
     ); 
   }
